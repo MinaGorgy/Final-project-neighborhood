@@ -3,9 +3,9 @@ import escapeRegExp from 'escape-string-regexp';
 import sortBy from 'sort-by';
 
 import './App.css';
-import MapComponent from './MapComponent';
-import Header from './Header';
-import Menu from './Menu';
+import MapComponent from './components/MapComponent';
+import Header from './components/Header';
+import Menu from './components/Menu';
 //the hard coded places
 //import * as places  from './places';
 
