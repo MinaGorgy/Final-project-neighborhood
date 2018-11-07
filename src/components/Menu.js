@@ -10,13 +10,12 @@ class Menu extends Component {
 
     render() {
 
-        const { query, places, connectLiToMarker, updateQuery } = this.props;
+        const { query, cafes, connectLiToMarker, updateQuery } = this.props;
         const { visible } = this.state;
 
         const style = {
             'zIndex': '1',
             'position': 'absolute',
-            'top' : '-11%'
         }
 
         return (
@@ -42,16 +41,16 @@ class Menu extends Component {
                     {!this.props.fetchError ?
 
 
-                        places.map(place =>
+                        cafes.map(cafe =>
 
                             <li
-                                key={place.name}
-                                aria-label={`show the ${place.name} info window`}
+                                key={cafe.name}
+                                aria-label={`show the ${cafe.name} info window`}
                                 role="button"
                                 tabIndex={visible ? '0' : '-1'}
-                                onClick={(e) => connectLiToMarker(place)}
-                                onKeyPress={(e) => connectLiToMarker(place)}
-                            >{place.name}
+                                onClick={(e) => connectLiToMarker(cafe)}
+                                onKeyPress={(e) => connectLiToMarker(cafe)}
+                            >{cafe.name}
                             </li>
 
                         ) : <li> Faild to fetch data from Four Square API</li>

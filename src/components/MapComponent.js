@@ -7,9 +7,8 @@ export class MapComponent extends Component {
 
     render() {
 
-        const { google, onMapClicked, places, onMarkerClick, activeMarker, showingInfoWindow, selectedPlaces, grabMarkersinfo } = this.props;
+        const { google, onMapClicked, cafes, onMarkerClick, activeMarker, showingInfoWindow, selectedCafes, grabMarkersinfo } = this.props;
 
-        console.log(places)
 
         const style = {
             width: '100%',
@@ -31,17 +30,17 @@ export class MapComponent extends Component {
 
                 >
 
-                    {places.map(place =>
+                    {cafes.map(cafe =>
                         <Marker
-                            key={place.id}
-                            id={place.id}
+                            key={cafe.id}
+                            id={cafe.id}
                             ref={grabMarkersinfo}
-                            name={place.name}
+                            name={cafe.name}
                             position={{
-                                lat: place.location.lat,
-                                lng: place.location.lng
+                                lat: cafe.location.lat,
+                                lng: cafe.location.lng
                             }}
-                            animation={(selectedPlaces.name === place.name) ? google.maps.Animation.BOUNCE : google.maps.Animation.none}
+                            animation={(selectedCafes.name === cafe.name) ? google.maps.Animation.BOUNCE : google.maps.Animation.none}
                             onClick={onMarkerClick}
                         />
                     )}
@@ -52,7 +51,7 @@ export class MapComponent extends Component {
                     >
                         
                             <div>
-                                <h3>{selectedPlaces.name}</h3>
+                                <h3>{selectedCafes.name}</h3>
                                 <p>Powered by FOUR SQUARE API</p>
                             </div> 
                         

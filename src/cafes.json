@@ -1,0 +1,65 @@
+[{
+        "id": "1",
+        "name": "Evento Cafe & Restaurant",
+        "latlong": {
+            "lat": 30.102431,
+            "lng": 31.384047
+        }
+    },
+    {
+        "id": "2",
+        "name": "Mesteka Cafe (قهوة مستكة)",
+        "latlong": {
+            "lat": 31.194722,
+            "lng": 29.904182
+        }
+    },
+    {
+        "id": "3",
+        "name": "Bibliotheca-Alexandrina",
+        "latlong": {
+            "lat": 30.10355536730142,
+            "lng": 31.37622121197304
+        }
+    },
+    {
+        "id": "4",
+        "name": "Café Suprême",
+        "latlong": {
+            "lat": 30.095644554750677,
+            "lng": 31.372080321814998
+        }
+    },
+    {
+        "id": "5",
+        "name": "aero cafe (ايرو كافية)",
+        "latlong": {
+            "lat": 30.102953061847504,
+            "lng": 31.381145423900872
+        }
+    },
+    {
+        "id": "6",
+        "name": "VOLT Cafe",
+        "latlong": {
+            "lat": 30.056870599083574,
+            "lng": 31.20691471130219
+        }
+    },
+    {
+        "id": "7",
+        "name": "Romantic Cafe",
+        "latlong": {
+            "lat": 30.10552148212005,
+            "lng": 31.38308870239373
+        }
+    },
+    {
+        "id": "8",
+        "name": "The Distric",
+        "latlong": {
+            "lat":30.092030631762867,
+            "lng": 31.383847495683316
+        }
+    }
+]
