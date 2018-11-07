@@ -11,7 +11,7 @@
 
 .header {
   padding: 12px 0;
-  background: #0396c2;
+  background: black;
   text-align: center;
   width: 100%;
   height: 60px;
@@ -27,7 +27,7 @@ Map {
 }
 
 .menu {
-  background-color: #104555;
+  background-color: black;
   color: #f0f8ff;
   padding: 15px 0;
   width: 40%;
@@ -53,38 +53,27 @@ Map {
 .menu ol li {
   padding: 10px;
   cursor: pointer;
-  border-bottom: 1px solid #14576b;
+  border-bottom: 1px solid #aba7a7;
   width: 100%;
 }
 
 .menu ol li:hover {
   color: #f0f8ff;
-  background-color: #165f76;
+  background-color: black;
 }
 
 .menu-btn {
-  margin-top: 5px;
-  margin-left: 95%;
-  padding-left: 10px;
-  width: 120px;
+  margin-left: 100%;
+  width: 40px;
   height: 40px;
-  background-color: #0396c2;
+  background-color: black;
   color: #f0f8ff;
   border: none;
   border-radius: 5px;
   font-size: 22px;
   cursor: pointer;
-  box-shadow: 2px 5px 10px #14576b;
 }
 
-.menu-btn:hover {
-  background-color: #25a5cc;
-  box-shadow: 2px 4px 8px #14576b;
-}
-
-.menu-btn:focus {
-  background-color: #c21603;
-}
 
 .slideIn {
   transform: translateX(0);

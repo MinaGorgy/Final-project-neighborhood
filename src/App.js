@@ -6,6 +6,12 @@ import './App.css';
 import MapComponent from './components/MapComponent';
 import Header from './components/Header';
 import Menu from './components/Menu';
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faBars)
 //the hard coded places
 //import * as places  from './places';
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 class Menu extends Component {
@@ -14,7 +15,8 @@ class Menu extends Component {
 
         const style = {
             'zIndex': '1',
-            'position': 'absolute'
+            'position': 'absolute',
+            'top' : '-11%'
         }
 
         return (
@@ -22,16 +24,17 @@ class Menu extends Component {
                 tabIndex={visible ? '0' : '-1'}
                 style={style}>
 
-                <button className="menu-btn" onClick={this.handleClick}>Menu &#x268C;</button>
+                <button className="menu-btn" onClick={this.handleClick}><FontAwesomeIcon icon="bars" /></button>
+               
 
                 <input
                     className="search-input"
                     tabIndex={visible ? '0' : '-1'}
                     type="text"
-                    placeholder="Search by title"
+                    placeholder="Search by cafe name "
                     value={query}
                     onChange={(e) => updateQuery(e.target.value)}
-                    aria-label={`search for museum by name`}
+                    aria-label={`search for cafe by name`}
                 />
 
 
