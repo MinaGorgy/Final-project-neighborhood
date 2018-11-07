@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import * as cafes  from './cafes';
 import escapeRegExp from 'escape-string-regexp';
 import sortBy from 'sort-by';
-
 import './App.css';
 import MapComponent from './components/MapComponent';
 import Header from './components/Header';
@@ -59,7 +58,7 @@ class App extends Component {
         this.setState({ cafes: cafes.response.venues });
       }).catch(error => {
         this.setState({ fourSqrError: true })
-        alert("Faiiled to get locations data, please try again")
+        alert("failed to get locations data, please try again")
       })
     }
   // to open the info window when the marker is clicked
@@ -71,9 +70,7 @@ class App extends Component {
     });
 
   /*
-  create markers array to collect markers data to be used by
-  list items of the sidemenu to trigger the infoWindow
-  click event of the corresponding marker on the map.
+  creating markers array 
   
   Inspired from: https://stackoverflow.com/questions/35610873/google-maps-with-responsive-sidebar
   */
